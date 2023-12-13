@@ -1,0 +1,167 @@
+<html>
+<head>
+	<title>WEBSITE</title>
+	<link rel="stylesheet" type="text/css" href="css_about us.css">
+
+	<link rel = "stylesheet" type = "text/css "href ="js/skitter.styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery-1.6.3.min.js"></script>
+ <script src="js/jquery.easing.1.3.js"></script>
+ <script src="js/jquery.animate-colors-min.js"></script>
+ <script src="js/jquery.skitter.min.js"></script>
+	
+ <script src="js/highlight.js"></script>
+ <script>
+ $(document).ready(function() {
+  var options = {};
+  if (document.location.search) {
+   var array = document.location.search.split('=');
+   var param = array[0].replace('?', '');
+   var value = array[1];
+   
+   if (param == 'animation') {
+    options.animation = value;
+   }
+   else if (param == 'type_navigation') {
+    if (value == 'dots_preview') {
+     $('.border_box').css({'marginBottom': '40px'});
+     options['dots'] = true;
+     options['preview'] = true;
+    }
+    else {
+     options[value] = true;
+     if (value == 'dots') $('.border_box').css({'marginBottom': '40px'});
+    }
+   }
+  }
+  
+  $('.box_skitter_large').skitter(options);
+  
+  // Highlight
+  $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+  
+ });
+ </script>
+</head>
+<body>
+	<div class ="container">
+		<div class ="headercon">
+			<div calss ="logo">
+				<img src="image/honda1.jpg" width="200" height="120">
+				
+			<div class ="headright"><img src="image/dd.jpg" width="760px" height="120px"></div>
+				
+				
+			</div>
+			
+
+	        <div class ="navbg">
+	        	<div class ="nav_inside">
+	        	<ul>
+	        		<li><a href="index.html">Home</a></li>
+	        		<li><a href="About Us.html">About Us</a></li>
+	        		<li><a href="Services.html">Services</a></li>
+	        		<li><a href="Careers.html">Careers</a></li>
+	        		<li><a href="Resources.html">Resources</a></li>
+	        		<li><a href="Contact Us.html">Contact Us</a></li>
+	        	</ul>
+	        </div>
+	    </div>
+	        <div class="flashcon">
+	        	<div class=" box_skitter box_skitter_large" style="z-index: 0;">
+
+	        		<ul>
+	        			<li><a href="#blindHeight"><img src="image/civic1.jpg"class="random"/></a></li>
+	        			<li><a href="#blindHeight"><img src="image/civic3.jpg"class="random"/></a></li>
+	        			<li><a href="#blindHeight"><img src="image/civic4.jpg"class="random"/></a></li>
+	        			
+	        		</ul>
+
+</div>
+</div>
+
+	        <div class="midboxcon">
+	        	<div class="midbox1">
+	        		<img src="image/red.jpg" width="320" height="200">
+	        	</div>
+	        	<div class="midbox2">
+	        		<img src="image/black.jpg" width="320" height="200">
+	        	</div>
+	        	<div class="midbox3">
+	        		<img src="image/yellow.jpg" width="320" height="200">
+	        	</div>
+	        	  </div>
+	        	
+	        		  <div class="about-section">
+  <h1>Company Brief</h1>
+  <p>Honda is a mobility company powered by everyone's dreams, creating mobility that helps and inspires people, in a wide range of fields such including motorcycles, automobiles, power products and aircraft.</p>
+  <h1>About Us Page</h1>
+  <p>We at Honda dream of a better world where people, technology and the environment live as one. That is why our products and processes are designed to put safe, efficient, economical, and environment-friendly technology at the service of people and the community. At our Batangas plant, once also just a dream that is now a 20-hectare reality, we push ahead with our efforts to provide our customers with life-building technology. This way, our dreams tie in with theirs, and together we readily face the future, because at Honda, we continue to witness the power of dreams.</p>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="image/SUS.jpg" alt="" width="240" height="200">
+      <div class="aboutus">
+        <h2>About Us</h2>
+        <p>Honda is known for its innovative spirit, high technological standards and passion for excellence.
+
+Every Honda product that leaves the assembly line, leaves with years of technological expertise, constant research and developmen, plus meticulous attention to quality control and customer satisfaction built into it.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/COMPAY.jpg" alt="" width="240" height="200">
+      <div class="aboutus">
+        <h2>Ceaseless innovation</h2>
+        <p>The design to cost and the innovative techniques designed for the vehicles are significant (Amabile & Pratt, 2016; Gonzalez et al., 2017; Ramos et al., 2016; Wu et al., 2016).</p>
+    </div>
+  </div>
+</div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/sustain.jpg" alt="" width="240" height="200">
+      <div class="aboutus">
+        <h2>Sustainability</h2>
+        <p>Honda will strive to realize zero environmental impact not only with its products, but throughout the entire product lifecycle including all corporate activities, focusing on carbon neutrality, clean energy and resource circulation.</p>
+      </div>
+    </div>
+  </div>
+
+			<footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Careers</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Resources</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+
+    </ul>
+    <center><p>&copy;2023 HONDA | Angeline B. Carnable</p></center>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+
+</div>
+</div>
+</body>
+</html>
